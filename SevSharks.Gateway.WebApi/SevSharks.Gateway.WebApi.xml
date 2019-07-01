@@ -1,0 +1,117 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>IT2.Gateway.WebApi</name>
+    </assembly>
+    <members>
+        <member name="T:IT2.Gateway.WebApi.BusConfigurator">
+            <summary>
+            Конфигуратор шины данных
+            </summary>
+        </member>
+        <member name="M:IT2.Gateway.WebApi.BusConfigurator.GetBusConfigurations">
+            <summary>
+            Получить полную конфигурацию для шины
+            </summary>
+        </member>
+        <member name="T:IT2.Gateway.WebApi.Controllers.ApplicationController">
+            <summary>
+            Контроллер для работы с заявками
+            </summary>
+        </member>
+        <member name="F:IT2.Gateway.WebApi.Controllers.ApplicationController._busManager">
+            <summary>
+            Менеджер для работы с шиной данных                                    
+            </summary>
+        </member>
+        <member name="M:IT2.Gateway.WebApi.Controllers.ApplicationController.#ctor(IT2.Common.Logger.Abstraction.ILog,IT2.Common.BusManager.Abstraction.IBusManager,AutoMapper.IMapper)">
+            <summary>
+            Конструктор контроллера для работы с заявками
+            </summary>
+        </member>
+        <member name="M:IT2.Gateway.WebApi.Controllers.ApplicationController.Get(System.Guid)">
+            <summary>
+            Возвращает информацию о заявке по ее идентификатору 
+            </summary>
+            <param name="id">Идентификатор заявки</param>
+        </member>
+        <member name="M:IT2.Gateway.WebApi.Controllers.ApplicationController.Post(IT2.Gateway.WebApi.Models.ApplicationDto)">
+            <summary>
+            Выполняет создание новой заявки на процедуру
+            </summary>
+            <param name="applicationDto">Модель заявки</param>
+        </member>
+        <member name="T:IT2.Gateway.WebApi.Controllers.TradeController">
+            <summary>
+            Контроллер для работы с процедурами
+            </summary>
+        </member>
+        <member name="F:IT2.Gateway.WebApi.Controllers.TradeController._busManager">
+            <summary>
+            Менеджер для работы с шиной данных
+            </summary>
+        </member>
+        <member name="F:IT2.Gateway.WebApi.Controllers.TradeController._mapper">
+            <summary>
+            Менеджер для работы с шиной данных
+            </summary>
+        </member>
+        <member name="M:IT2.Gateway.WebApi.Controllers.TradeController.#ctor(IT2.Common.Logger.Abstraction.ILog,IT2.Common.BusManager.Abstraction.IBusManager,AutoMapper.IMapper)">
+            <summary>
+            Конструктор контроллера для работы с процедурами
+            </summary>
+        </member>
+        <member name="M:IT2.Gateway.WebApi.Controllers.TradeController.Get(System.Guid)">
+            <summary>
+            Возвращает информацию о процедуре по ее идентификатору
+            </summary>
+            <param name="id">Идентификатор процедуры</param>
+        </member>
+        <member name="M:IT2.Gateway.WebApi.Controllers.TradeController.Post(IT2.Gateway.WebApi.Models.TradeDto)">
+            <summary>
+            Выполняет создание новой процедуры
+            </summary>
+            <param name="tradeDto">Модель процедуры</param>
+        </member>
+        <member name="T:IT2.Gateway.WebApi.Mappers.ApplicationMapProfile">
+            <summary>
+            Профайл логики работы с заявками
+            </summary>
+        </member>
+        <member name="T:IT2.Gateway.WebApi.Mappers.TradeMapProfile">
+            <summary>
+            Профайл логики работы с процедурами
+            </summary>
+        </member>
+        <member name="T:IT2.Gateway.WebApi.Models.ApplicationDto">
+            <summary>
+            ДТО заявки
+            </summary>
+        </member>
+        <member name="P:IT2.Gateway.WebApi.Models.ApplicationDto.Name">
+            <summary>
+            Название заявки
+            </summary>
+        </member>
+        <member name="P:IT2.Gateway.WebApi.Models.ApplicationDto.State">
+            <summary>
+            Текущее состояние заявки
+            </summary>
+        </member>
+        <member name="P:IT2.Gateway.WebApi.Models.ApplicationDto.TradeId">
+            <summary>
+            Идентификатор процедуры
+            </summary>
+        </member>
+        <member name="T:IT2.Gateway.WebApi.Models.TradeDto">
+            <summary>
+            ДТО процедуры
+            </summary>
+        </member>
+        <member name="P:IT2.Gateway.WebApi.Models.TradeDto.Name">
+            <summary>
+            Название процедуры
+            </summary>
+        </member>
+    </members>
+</doc>
